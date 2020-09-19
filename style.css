@@ -38,6 +38,11 @@
 }
 
 /* The SHIPS */
+.ship div {
+    width: 40px;
+    height: 40px;
+}
+
 .destroyer-container {
     width: 80px;
     height: 40px;
@@ -46,7 +51,34 @@
     display: flex;
 }
 
-.ship div {
-    width: 40px;
+.submarine-container {
+    width: 120px;
     height: 40px;
+    background-color: #27ae60;
+    margin: 5px;
+    display: flex;
+}
+
+.cruiser-container {
+    width: 120px;
+    height: 40px;
+    background-color: #8e44ad;
+    margin: 5px;
+    display: flex;
+}
+
+.battleship-container {
+    width: 160px;
+    height: 40px;
+    background-color: #7f8c8d;
+    margin: 5px;
+    display: flex;
+}
+
+.carrier-container {
+    width: 200px;
+    height: 40px;
+    background-color: #16a085;
+    margin: 5px;
+    display: flex;
 }
