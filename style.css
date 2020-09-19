@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+}
+
+/* the user's grid style */
+.grid-user {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2980b9;
+    margin: 10px;
+}
+
+/* styling for anything inside the grid */
+.grid div {
+    width: 40px;
+    height: 40px;
+    background-color: #95a5a6;
+}
+
+/* the computer's grid style */
+.grid-computer {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #27ae60;
+    margin: 10px;
+}
+
+/* grid of available ships */
+.grid-display {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    background-color: #f1c40f;
+}
