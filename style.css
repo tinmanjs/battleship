@@ -16,7 +16,6 @@
 .grid div {
     width: 40px;
     height: 40px;
-    background-color: #95a5a6;
 }
 
 /* the computer's grid style */
@@ -35,12 +34,6 @@
     height: 400px;
     margin: 10px;
     background-color: #f1c40f;
-}
-
-/* The SHIPS */
-.ship div {
-    width: 40px;
-    height: 40px;
 }
 
 .destroyer-container {
@@ -81,4 +74,14 @@
     background-color: #16a085;
     margin: 5px;
     display: flex;
+}
+
+/* The SHIPS */
+.ship div {
+    width: 40px;
+    height: 40px;
+}
+
+.destroyer {
+    background-color: red;
 }
