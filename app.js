@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const computerGrid = document.querySelector('.grid-computer')
   const displayGrid = document.querySelector('.grid-display')
   const ships = document.querySelectorAll('.ship')
-  console.log(ships)
 
   const destoyer = document.querySelector('destroyer-container')
   const submarine = document.querySelector('submarine-container')
@@ -82,11 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
       let randomDirection = Math.floor(Math.random() * ship.directions.length)
       let current = ship.directions[randomDirection]
       if (randomDirection === 0) direction = 1
-      if (randomDirection === 1) direction = 10
-      console.log(direction)
+      else direction = 10
       
       // get a random square on the array
-      console.log(computerSquares.length, computerSquares)
       let randomStart = Math.abs(Math.floor(Math.random() * computerSquares.length - (ship.directions[0].length * direction)))
 
       // detect if a space is taken
@@ -100,6 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
       else generateShip(ship)
   }
 
+  // Generate the Computer's Armada
   generateShip(shipArray[0])
-
+  generateShip(shipArray[1])
+  generateShip(shipArray[2])
+  generateShip(shipArray[3])
+  generateShip(shipArray[4])
 })
